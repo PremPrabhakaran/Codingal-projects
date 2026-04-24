@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Iframe</title>
+        <title>Marks-Average</title>
     </head>
     <body>
-        <center>
-            <h1>Using Iframe you can use any online video in your project</h1>
-            <iframe width="500" height="400"
-            src="https://www.youtube.com/embed/lsCObbRG370?autoplay=1&mute=1"
-            allowfullscreen>
-            </iframe>
-        </center>
+        <h2>Enter your Marks here</h2>
+            <form oninput="avg.value = (Number(m1.value) + Number(m2.value) + Number(m3.value)) / 3">
+            Name:<br>
+        <input type="text"><br><br>
+
+       Science:<br>
+        <input type="number" id="m1"><br><br>
+
+        Maths:<br>
+        <input type="number" id="m2"><br><br>
+
+       English:<br>
+        <input type="number" id="m3"><br><br>
+
+        Average:
+        <output name="avg"></output>
+        </form>
     </body>
 </html>
