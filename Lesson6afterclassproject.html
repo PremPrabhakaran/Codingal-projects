@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewpoint" content="width=device-width">
+        <title>Personal Details Form</title>
+    </head>
+    <body>
+        <h1>Personal Details form</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend> 
+                <label>First Name: </label><br>
+                <input type="text" id="name" placeholder="Enter Name"><br><br>
+                <label>Last Name: </label><br>
+                <input type="text" id="name" placeholder="Enter Name"><br><br>
+                <label>Age</label><br>
+                <input Age="Number" id="age"><br><br>
+                <label>Email</label><br>
+                <input name="text" id="email"><br><br>
+                <label>Contact Number (This will be hidden)</label><br>
+                <input name="password" id="contact"><br><br> 
+                <label>Adress</label><br>
+                <input name="text" id="adress"><br><br>
+                <label>Gender</label><br>
+                <input type="radio" id="female" name="Gender" value="female">female<br><br>
+                <input type="radio" id="male" name="Gender" value="male">male<br><br>
+                <label>Birthday</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label>Favourite Flavour of Ice Cream</label>
+                <input type="checkbox" id="Ice Cream" value="Vanilla">Vanilla<br>
+                <input type="checkbox" id="Ice Cream" value="Chocolate">Chocolate<br>
+                <input type="checkbox" id="Ice Cream" value="Strawberry">Strawberry<br><br>
+            </fieldset>
+        </form>
+    </body>
+
+    <head>
+        <title>Marks-Average</title>
+    </head>
+    <body>
+        <h2>Enter your Marks here</h2>
+            <form oninput="avg.value = (Number(m1.value) + Number(m2.value) + Number(m3.value)) / 3">
+            
+       Science:<br>
+        <input type="number" id="m1"><br><br>
+
+        Maths:<br>
+        <input type="number" id="m2"><br><br>
+
+       English:<br>
+        <input type="number" id="m3"><br><br>
+
+        Average:
+        <output name="avg"></output>
+        </form>
+    </body>
+</html>
